@@ -1,0 +1,23 @@
+.nav {
+  background:#0b132b;
+  color:white;
+  padding:15px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo {
+  margin:0;
+}
+
+.links a {
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  font-size:18px;
+}
+
+.links a:hover {
+  color:#5bc0be;
+}
