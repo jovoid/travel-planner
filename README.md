@@ -1,17 +1,29 @@
-# Travel Planner
+# Travel Planner – RWD Project
 
-## Frontend
-React + Router + UI
+A simple Travel Planner web application built as part of the RWD course.
 
-Run:
-cd frontend
-npm install
-npm start
+## 🔗 Live Demo
+https://travel-planner-wou2.onrender.com
 
-## Backend
-Node + Express + MySQL
+## 🛠 Tech Stack
+- Frontend: React
+- Backend: Node.js + Express
+- Database: MySQL (configured locally)
 
-Run:
-cd backend
-npm install
+## ✨ Features
+- Home page
+- Trips page
+- Login page UI
+- React Router navigation
+- Deployed using Render
+
+## 🚀 How to Run Locally
+### Frontend
+cd frontend  
+npm install  
+npm start  
+
+### Backend
+cd backend  
+npm install  
 node server.js
