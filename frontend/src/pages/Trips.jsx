@@ -14,6 +14,7 @@ export default function Trips() {
           trip_name: "Bangalore ➜ Goa",
           city: "Goa",
           country: "India",
+          image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
           details: [
             "Visit Baga & Calangute Beach",
             "Try Goan seafood",
@@ -24,6 +25,7 @@ export default function Trips() {
           trip_name: "Bangalore ➜ Manali",
           city: "Manali",
           country: "India",
+          image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
           details: [
             "Snow activities",
             "Mountain sightseeing",
@@ -34,6 +36,7 @@ export default function Trips() {
           trip_name: "Delhi ➜ Jaipur",
           city: "Jaipur",
           country: "India",
+          image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3",
           details: [
             "Visit Amer Fort",
             "Explore local markets",
@@ -42,7 +45,7 @@ export default function Trips() {
         }
       ]);
       setLoading(false);
-    }, 800); // fake loading for UX
+    }, 800);
   };
 
   return (
@@ -72,9 +75,22 @@ export default function Trips() {
               border: "1px solid gray",
               padding: "15px",
               borderRadius: "10px",
-              marginBottom: "15px"
+              marginBottom: "20px"
             }}
           >
+            {/* IMAGE */}
+            <img
+              src={trip.image}
+              alt={trip.trip_name}
+              style={{
+                width: "100%",
+                height: "220px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                marginBottom: "10px"
+              }}
+            />
+
             <h2>{trip.trip_name}</h2>
             <p>{trip.city}, {trip.country}</p>
 
